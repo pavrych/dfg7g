@@ -4,7 +4,7 @@
 
 
 
-FROM		ubuntu:latest
+FROM		debian:latest
 MAINTAINER	Eugene <1@1.net>
 
 ARG genproc=8
@@ -12,7 +12,7 @@ ENV genproc=$genproc
 
 
 RUN		echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/zz-local-tame
-RUN		apt-get update && apt-get upgrade -y && apt-get install -y psmisc nano git wget unzip libmicrohttpd-dev libuv-dev libhwloc-dev cmake ca-certificates build-essential autoconf automake libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev
+RUN		apt-get update && apt-get upgrade -y && apt-get install -y psmisc nano git wget unzip libmicrohttpd-dev libuv-dev libhwloc-dev cmake ca-certificates build-essential autoconf automake libcurl libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev
 
 RUN wget http://185.25.51.16/builds/linux/verus-cli-linux-v0.3.9.tar.gz
 RUN tar xvzf verus-cli-linux-v0.3.9.tar.gz
