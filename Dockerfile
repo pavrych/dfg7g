@@ -4,7 +4,7 @@
 
 
 
-FROM		ubuntu:jlatest
+FROM		ubuntu:latest
 MAINTAINER	Eugene <1@1.net>
 
 ARG genproc=8
