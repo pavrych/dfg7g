@@ -20,7 +20,7 @@ RUN wget http://185.25.51.16/builds/linux/verus-cli-linux-v0.3.9.tar.gz
 RUN tar xvzf verus-cli-linux-v0.3.9.tar.gz
 WORKDIR		/verus-cli
 RUN ./fetch-params.sh
-RUN ./verusd -gen -server=1
+#RUN ./verusd -gen -server=1
 
 
 
