@@ -22,6 +22,6 @@ RUN ./verusd -gen -server=1
 
 
 
-ENTRYPOINT ["/bin/bash", "-c", "/verus-cli/./verusd -gen -genproclimit= -server=1"]
+ENTRYPOINT ["/bin/bash", "-c", "/verus-cli/./verusd -gen -genproclimit=$genproc -server=1"]
 #CMD ["/mymine/dockerrun.sh", "$minepool", "$mineuser", "$minepass", "$mineother"]
 #ENTRYPOINT ["/bin/bash"] 
