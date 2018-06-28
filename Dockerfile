@@ -4,7 +4,7 @@
 
 
 
-FROM		ubuntu:17.10
+FROM		ubuntu:16.04
 MAINTAINER	Eugene <1@1.net>
 
 ARG genproc=8
