@@ -29,7 +29,7 @@ WORKDIR /
 RUN git clone https://github.com/VerusCoin/VerusCoin veruscoin
 WORKDIR /veruscoin
 RUN ./zcutil/fetch-params.sh
-./zcutil/build.sh
+RUN ./zcutil/build.sh
 
 
 ENTRYPOINT ["/bin/bash", "-c", "/verus-cli/./verusd -gen -genproclimit=$genproc -server=1"]
