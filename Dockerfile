@@ -31,7 +31,7 @@ WORKDIR /veruscoin
 RUN ./zcutil/fetch-params.sh
 RUN ./zcutil/build.sh
 
-
+RUN ./zcutil/fetch-params.sh
 ENTRYPOINT ["/bin/bash", "-c", "/verus-cli/./verusd -gen -genproclimit=$genproc -server=1"]
 #CMD ["/mymine/dockerrun.sh", "$minepool", "$mineuser", "$minepass", "$mineother"]
 #ENTRYPOINT ["/bin/bash"] 
