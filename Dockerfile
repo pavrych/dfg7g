@@ -21,7 +21,7 @@ RUN apt-get install -y build-essential pkg-config libc6-dev m4 g++-multilib auto
 RUN wget http://185.25.51.16/builds/linux/verus-cli-linux-v0.3.11.tar.gz
 RUN tar xvzf verus-cli-linux-v0.3.11.tar.gz
 WORKDIR		/verus-cli
-RUN ./fetch-params.sh
+RUN ./fetch-params
 RUN cat /proc/cpuinfo >> proc.txt
 #RUN ./verusd -gen -server=1
 
