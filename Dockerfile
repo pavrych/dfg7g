@@ -9,6 +9,8 @@ MAINTAINER	Eugene <1@1.net>
 
 ARG genproc=1
 ENV genproc=$genproc
+ARG HOME=/root/
+ENV HOME=$HOME
 
 
 RUN		echo 'APT::Install-Recommends "false";' > /etc/apt/apt.conf.d/zz-local-tame
